@@ -4,6 +4,10 @@ import { Footer } from "./components/Footer";
 import Header from "./components/Header";
 import Table from "./components/table/Table";
 
+import { useCount } from "./hooks/useCount";
+import Card from "./components/card/Card"
+import CardContainer from "./components/cardContainer/CardContainer";
+
 const App = () => {
 
   const users = [
@@ -41,6 +45,19 @@ const App = () => {
           <h1>Tabla</h1>
           <Table users={users} />
         </div>
+
+          
+
+        
+
+        <CardContainer>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        </CardContainer>
       </div>
       <Footer number="12345" />
     </div>
