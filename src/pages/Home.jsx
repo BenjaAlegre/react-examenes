@@ -1,6 +1,7 @@
 import CardContainer from "../components/cardContainer/CardContainer"
 import { useEffect, useState } from "react"
 import { getStudentsJson } from "./getStudentsInfo";
+import { calcularPromedios} from "./obtenerPromedios";
 
 export default function Home() {
     const [alumnos, setAlumnos] = useState();
@@ -9,6 +10,9 @@ export default function Home() {
         .then(students=>setAlumnos(students))
         .catch(e=>console.error(e))
     },[])
+
+    
+
 
     return(
         <main>
