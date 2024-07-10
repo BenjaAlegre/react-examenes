@@ -5,9 +5,7 @@ import Header from "./components/Header";
 import Table from "./components/table/Table";
 
 import { useCount } from "./hooks/useCount";
-import Card from "./components/card/Card"
-import CardContainer from "./components/cardContainer/CardContainer";
-
+import Home from "./pages/Home";
 const App = () => {
 
   const users = [
@@ -42,25 +40,7 @@ const App = () => {
       style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
     >
       <Header />
-      <div style={{ flexGrow: 1 }}>
-        <div>
-          <h1>Tabla</h1>
-          <Table users={users} />
-        </div>
-
-          
-
-        
-
-        <CardContainer>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        </CardContainer>
-      </div>
+        <Home/>
       <Footer number="12345" />
     </div>
   );
