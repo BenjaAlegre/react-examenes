@@ -11,7 +11,7 @@ export const Footer = ({ number = "123" }) => {
         position: "relative",
         bottom:0,
       }}>
-      <p>tel: {number}</p>
+      <p>Milagros - Gabriel - Benjamin</p>
     </footer>
   );
 };

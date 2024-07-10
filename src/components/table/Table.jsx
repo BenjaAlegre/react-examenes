@@ -8,7 +8,9 @@ const Table = ({ users }) => {
         
         <tr>
               { users && Object.keys(users[0]).map((key) => (
-                <th>{key}</th>
+                key !== "examenes" &&
+                <th>{key.toUpperCase()}</th>
+
               ))}
             </tr>
       </thead>
@@ -16,10 +18,10 @@ const Table = ({ users }) => {
         {users && users.map(user => (
           <tr key={user.id}>
             <td>{user.id}</td>
-            <td>{user.apellido}</td>
             <td>{user.nombre}</td>
+            <td>{user.apellido}</td>
             <td>{user.edad}</td>
-            <td>9</td>
+            <td>{user.promedio}</td>
           </tr>
         ))}
       </tbody>

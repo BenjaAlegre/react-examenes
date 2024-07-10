@@ -8,30 +8,7 @@ import { useCount } from "./hooks/useCount";
 import Home from "./pages/Home";
 const App = () => {
 
-  const users = [
-    {
-      id: 1,
-      apellido: "Jon",
-      nombre: "Hernandez",
-      edad: 25,
-      examenes: [
-        { tema: "Matematicas", puntaje: 95 },
-        { tema: "Fisica", puntaje: 88 },
-      ],
-      promedio: 1
-    },
-    {
-      id: 2,
-      apellido: "Smith",
-      nombre: "Jane",
-      edad: 30,
-      examenes: [
-        { tema: "Matematicas", puntaje: 85 },
-        { tema: "Fisica", puntaje: 92 },
-      ],
-      promedio: 1
-    },
-  ];
+
 
   return (
     <div
