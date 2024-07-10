@@ -8,6 +8,8 @@ export const Footer = ({ number = "123" }) => {
         display: "flex",
         justifyContent: "space-around",
         alignItems: "center",
+        position: "relative",
+        bottom:0,
       }}>
       <p>tel: {number}</p>
     </footer>

@@ -7,19 +7,19 @@ const Table = ({ users }) => {
       <thead>
         
         <tr>
-              {Object.keys(users[0]).map((key) => (
+              { users && Object.keys(users[0]).map((key) => (
                 <th>{key}</th>
               ))}
             </tr>
       </thead>
       <tbody>
-        {users.map(user => (
+        {users && users.map(user => (
           <tr key={user.id}>
             <td>{user.id}</td>
             <td>{user.apellido}</td>
             <td>{user.nombre}</td>
             <td>{user.edad}</td>
-            <td>{user.promedio}</td>
+            <td>9</td>
           </tr>
         ))}
       </tbody>
