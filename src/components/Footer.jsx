@@ -9,7 +9,7 @@ export const Footer = ({ number = "123" }) => {
         justifyContent: "space-around",
         alignItems: "center",
       }}>
-      <p>tel: {number}</p>
+      <p>Milagros - Gabriel - Benjamin</p>
     </footer>
   );
 };

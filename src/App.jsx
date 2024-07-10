@@ -13,8 +13,9 @@ const App = () => {
   const users = [
     {
       id: 1,
-      apellido: "Jon",
-      nombre: "Hernandez",
+      nombre: "Jon",
+      apellido: "A",
+      
       edad: 25,
       examenes: [
         { tema: "Matematicas", puntaje: 95 },
@@ -24,8 +25,9 @@ const App = () => {
     },
     {
       id: 2,
-      apellido: "Smith",
       nombre: "Jane",
+      apellido: "Smith",
+      
       edad: 30,
       examenes: [
         { tema: "Matematicas", puntaje: 85 },
