@@ -2,9 +2,7 @@ import "./App.css";
 import { Footer } from "./components/Footer";
 import Header from "./components/Header";
 import { useCount } from "./hooks/useCount";
-import Card from "./components/card/Card"
-import CardContainer from "./components/cardContainer/CardContainer";
-
+import Home from "./pages/Home";
 const App = () => {
   const { state, add, desc, reset } = useCount();
 
@@ -20,41 +18,7 @@ const App = () => {
     <div
       style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Header />
-      <div style={{ flexGrow: 1 }}>
-        {/* <p>Contador {state}</p>
-        <div>
-          <button onClick={add}>Aumentar contador</button>
-          <button onClick={desc}>Disminuir contador</button>
-          <button onClick={reset}>Resetear contador</button>
-        </div> */}
-
-        <table>
-          <thead>
-            <tr>
-              {Object.keys(users[0]).map((key) => (
-                <th>{key}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {users.map((user) => (
-              <tr>
-                <td>{user.id}</td>
-                <td>{user.nombre}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
-        <CardContainer>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        </CardContainer>
-      </div>
+        <Home/>
       <Footer number="12345" />
     </div>
   );

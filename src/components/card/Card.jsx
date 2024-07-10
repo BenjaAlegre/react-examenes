@@ -1,15 +1,16 @@
 import styles from "./Card.module.css"
 
-const Card = ()=> {
+const Card = ({alumno})=> {
+    const {nombre, apellido, id, edad, examenes} = alumno;
     return(
     <div className={styles.card}  >
         
-        <div>
-        <h2>Apellido:</h2>
-        <p>Nombre:</p>
-        </div>
-        <p>Edad:</p>
-        <p>Promedio:</p>
+     
+        <h2>Apellido: {apellido}</h2>
+        <p>Nombre:{nombre}</p>
+
+        <p>Edad:{edad}</p>
+        <p>Promedio:9</p>
 
     </div>
     )
