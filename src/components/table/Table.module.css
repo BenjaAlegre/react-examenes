@@ -1,19 +1,19 @@
-table {
+.table {
     width: 90%;
     border-collapse: collapse;
-    margin: 2em 0;
+    margin: 2em auto;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  thead th {
+  .thead th {
     background-color: #4CAF50;
     color: white;
     text-align: left;
     padding: 10px;
   }
   
-  tbody td {
+  .tbody td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
   }

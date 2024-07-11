@@ -3,8 +3,8 @@ import styles from "./Table.module.css"
 
 const Table = ({ users }) => {
   return (
-    <table>
-      <thead>
+    <table className={styles.table}>
+      <thead className={styles.thead}>
         
         <tr>
               { users && Object.keys(users[0]).map((key) => (
@@ -14,7 +14,7 @@ const Table = ({ users }) => {
               ))}
             </tr>
       </thead>
-      <tbody>
+      <tbody className={styles.tbody}>
         {users && users.map(user => (
           <tr key={user.id}>
             <td>{user.id}</td>
