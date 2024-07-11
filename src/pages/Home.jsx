@@ -1,9 +1,9 @@
 import CardContainer from "../components/cardContainer/CardContainer"
 import { useEffect, useState } from "react"
-import { getStudentsJson } from "./getStudentsInfo";
+import { getStudentsJson } from "../utils/getStudentsInfo";
 import Table from "../components/table/Table";
 
-import { calcularPromedios} from "./obtenerPromedios";
+import { calcularPromedios} from "../utils/obtenerPromedios";
 
 export default function Home() {
     const [isTable, setIsTable] = useState(true)
